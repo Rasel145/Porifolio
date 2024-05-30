@@ -4,44 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- navbar start  -->
-    <div class="navbar">
-        <h3><a href="">Logo here</a></h3>
-        <div class="navlist">
-            <menu>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Assets/images/logo.png" alt="logo" class="logo">
                 <ul>
-                    <li>Home </li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                    <li>About Me</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-            </menu>
-            <h1>here we go.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in nihil nemo amet suscipit!
-                Necessitatibus omnis voluptatum molestias fugit debitis, expedita repudiandae adipisci reprehenderit ex.
-                Esse ex impedit, consectetur hic corrupti tenetur quis quo perspiciatis. Maxime recusandae culpa
-                excepturi sed dolore earum neque debitis aspernatur ad minima et, hic, voluptatum asperiores itaque
-                inventore pariatur voluptatibus aperiam ipsa, aliquam blanditiis cupiditate doloremque magnam. Ducimus
-                eligendi qui vero recusandae in, inventore porro magnam. Maxime, placeat possimus harum recusandae natus
-                eum cum voluptas velit debitis soluta tempore unde tenetur, a odio quaerat. Blanditiis cupiditate
-                eveniet atque ipsa ut nihil illum dicta esse debitis, qui ullam, velit laboriosam. Necessitatibus
-                ratione possimus animi obcaecati quas impedit cumque atque aliquam eos. Alias itaque animi illo
-                laudantium? Assumenda, cumque perferendis! Culpa quibusdam possimus id sequi sint consectetur incidunt
-                fugit recusandae velit voluptatibus, laudantium voluptatum autem cupiditate, nobis architecto vitae
-                aliquam! Laboriosam sapiente molestias et eveniet dolore delectus! Fugit voluptates, praesentium, ullam
-                dicta error aliquam alias impedit laudantium animi maiores unde aspernatur mollitia inventore! Libero
-                maxime natus possimus nostrum iure perspiciatis vitae aperiam fugit doloribus ipsa. Fugit velit
-                explicabo sed ipsa maiores rerum amet, enim soluta obcaecati dolorum necessitatibus architecto modi
-                harum, ab quibusdam cupiditate numquam. Dicta, impedit.F</p>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Kelvin</span> <br>Jen From Australia</h1>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sint nisi magnam, molestiae nemo
+                        quaerat sapiente. Possimus aliquid dolor doloremque, voluptatem, dolores qui excepturi ut, natus
+                        quia assumenda accusamus suscipit!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br> Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span> <br> UI/UX Design Training at ET Institute</li>
+                                <li><span>2021 - 2023 </span><br> Team Lead at StarApp LLC.</li>
+                                <li><span>2020 - 2021 </span><br> Internship at ekart eCommerce</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span> <br> UI/UX Training at IITC</li>
+                                <li><span>2021</span><br> Diploma from TPI Tangail</li>
+                                <li><span>2016</span><br>SSC from BBGBHS Tangail</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
